@@ -1,0 +1,366 @@
+  /* Fuentes estilo dibujado a mano (similar a chiikawaofficial.com) */
+/* Caveat = títulos manuscritos, Patrick Hand = texto cuerpo */
+
+.wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: clamp(0.75rem, 4vw, 1.5rem) clamp(0.75rem, 4vw, 1.5rem) 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff4f0;
+  background-image: url(/personajes/resource/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-attachment: fixed;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 252, 245, 0.75);
+  pointer-events: none;
+}
+
+.wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  max-width: min(520px, calc(100vw - 2rem));
+  width: 100%;
+  background: rgba(255, 253, 248, 0.97);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  /* Estilo "dibujado a mano": bordes irregulares, línea tipo lápiz */
+  border-radius: 28px 24px 30px 26px;
+  border: 3px solid #3d3d3d;
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.06),
+    8px 8px 0 rgba(0, 0, 0, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Stickers en las esquinas — estilo artesanal, ligeramente inclinados */
+.sticker {
+  position: absolute;
+  width: clamp(48px, 12vw, 72px);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
+}
+.stickerTopLeft {
+  top: -22px;
+  left: -22px;
+  transform: rotate(-12deg);
+}
+.stickerTopRight {
+  top: -22px;
+  right: -22px;
+  transform: rotate(10deg);
+}
+.stickerBottomLeft {
+  bottom: -22px;
+  left: -22px;
+  transform: rotate(8deg);
+}
+.stickerBottomRight {
+  bottom: -22px;
+  right: -22px;
+  transform: rotate(-10deg);
+}
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+
+.titleChiikawa {
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: 600;
+  font-size: clamp(3.25rem, 9vw, 3.5rem);
+  color: #72533f;
+  text-align: center;
+  margin: -0.5rem 0 5rem;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  filter: blur(0.5px);
+}
+
+.title {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.intro {
+  font-family: 'Patrick Hand', cursive;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: #444;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.primaryButton {
+  display: block;
+  width: 100%;
+  padding: clamp(0.875rem, 3vw, 1rem) 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 700;
+  font-family: 'Patrick Hand', cursive;
+  color: #fff;
+  background: linear-gradient(180deg, #e2c0ab 0%, #daa85e 100%);
+  border: 2px solid #2d2d2d;
+  border-radius: 18px 14px 20px 16px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.progressBar {
+  height: 10px;
+  background: #e8e4dc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #e87a6b, #d65a4a);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+.questionText {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0 0 1.25rem;
+  line-height: 1.35;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options li {
+  margin-bottom: 0.75rem;
+}
+
+.optionButton {
+  display: block;
+  width: 100%;
+  padding: clamp(0.875rem, 2.5vw, 1rem) 1.25rem;
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+  font-weight: 500;
+  font-family: 'Patrick Hand', cursive;
+  text-align: left;
+  color: #333;
+  background: #faf8f4;
+  border: 2px solid #3d3d3d;
+  border-radius: 14px 12px 16px 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.optionButton:hover {
+  background: #fff5ee;
+  transform: translateX(4px);
+}
+
+.loadingText {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1.15rem, 4vw, 1.35rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.loadingSub {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #666;
+  text-align: center;
+  margin: 0;
+}
+
+.resultMedia {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  min-height: clamp(5rem, 20vw, 6rem);
+}
+
+.resultImage {
+  max-width: min(160px, 40vw);
+  max-height: min(160px, 40vw);
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.resultEmoji {
+  font-size: clamp(3rem, 12vw, 4rem);
+  display: block;
+  margin: 0 auto;
+}
+
+.resultTitle {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.resultDescription {
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.trait {
+  padding: 0.35rem 0.75rem;
+  font-size: clamp(0.8rem, 2vw, 0.85rem);
+  font-weight: 600;
+  color: #444;
+  background: #f0ebe2;
+  border: 1px solid #3d3d3d;
+  border-radius: 999px;
+}
+
+.resultGifWrap {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.resultGif {
+  max-width: min(200px, 50vw);
+  max-height: min(200px, 50vw);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid #3d3d3d;
+}
+
+.gifLoading {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #666;
+}
+
+.error {
+  color: #b52a2a;
+  font-size: clamp(0.85rem, 2vw, 0.9rem);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  pointer-events: none;
+}
+
+.footer > * {
+  pointer-events: auto;
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(70, 60, 55, 0.9);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer a:hover {
+  color: #2d2d2d;
+  transform: scale(1.1);
+}
+
+.githubIcon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.95;
+}
+
+.footer a:hover .githubIcon {
+  opacity: 1;
+}
+
+.footerDev {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-weight: 600;
+  color: rgba(70, 60, 55, 0.9);
+}
+
+.footerDevLogo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Responsive: móvil/tablet — mismo PNG, sin fixed para mejor scroll */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0.75rem;
+    background-attachment: scroll;
+  }
+
+
+
+  .card {
+    padding: 1.25rem;
+  }
+}

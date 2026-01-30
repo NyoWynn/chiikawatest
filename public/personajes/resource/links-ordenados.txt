@@ -1,0 +1,29 @@
+# GIFs por personaje (ordenados, uno por personaje)
+# Usados en la app debajo del mensaje de la IA
+
+chiikawa:
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJ6OXk4M2U1cHNrdWc1a3VtNzM0Z3M2b3JyYmVua3EzZnJ1eDlybSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UxES0P0wADBV5Msx0X/giphy.gif
+
+hachiware:
+https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YWJidjN0dXFhYmt5aDhsdm05OW5hZHM5cm96NGc2YW1ybG9uOW15aCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3IXzpFl4UG4M0YwBHX/giphy.gif
+
+usagi:
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhiMW5laHk2dnkxZG9ieTJoYjBsZWxqeW9jbnRqYjdldTljdThsMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0wNNkiSqC9EOAt58Hh/giphy.gif
+
+momonga:
+https://tenor.com/m5FaKtMnPAP.gif
+https://media.tenor.com/m5FaKtMnPAP
+
+furuhonya:
+https://tenor.com/bFh2UfVypdP.gif
+
+kurimanju:
+https://tenor.com/fSjWworMIK6.gif
+
+rakko:
+https://tenor.com/fFiGQTDNya8.gif
+
+shisa:
+https://tenor.com/nUDYb75GX9S.gif
+
+# Sin GIF en el listado original: pochette, roudou, ramen
