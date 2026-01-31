@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { QUESTIONS, TOTAL_QUESTIONS } from './data/questions';
 import { CHARACTERS, type CharacterId } from './data/characters';
 
@@ -87,6 +88,7 @@ export default function App() {
   if (step === 'intro') {
     return (
       <div className={styles.wrapper}>
+        <SpeedInsights />
         <h1 className={styles.titleChiikawa}>CHiiKAWA</h1>
         <div className={styles.card}>
           <CardStickers />
@@ -109,6 +111,7 @@ export default function App() {
     const progress = ((currentQuestion + 1) / TOTAL_QUESTIONS) * 100;
     return (
       <div className={styles.wrapper}>
+        <SpeedInsights />
         <h1 className={styles.titleChiikawa}>CHiiKAWA</h1>
         <div className={styles.card}>
           <CardStickers />
@@ -154,6 +157,7 @@ export default function App() {
 
   return (
     <div className={styles.wrapper}>
+      <SpeedInsights />
       <h1 className={styles.titleChiikawa}>CHiiKAWA</h1>
       <div className={styles.card} style={{ borderColor: char.color }}>
         <CardStickers />
